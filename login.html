@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Вход в Умняшу</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #fff4c7, #dff7ff, #f5ddff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .login-card {
+      width: 100%;
+      max-width: 430px;
+      background: white;
+      border-radius: 30px;
+      padding: 35px 25px;
+      text-align: center;
+      box-shadow: 0 12px 35px rgba(0,0,0,0.12);
+    }
+
+    .fox {
+      font-size: 70px;
+      margin-bottom: 5px;
+    }
+
+    h1 {
+      margin: 5px 0 10px;
+      color: #5b3b8a;
+      font-size: 32px;
+    }
+
+    .subtitle {
+      color: #666;
+      font-size: 17px;
+      margin-bottom: 25px;
+    }
+
+    label {
+      display: block;
+      text-align: left;
+      font-weight: bold;
+      color: #555;
+      margin: 15px 5px 7px;
+    }
+
+    input {
+      width: 100%;
+      padding: 15px;
+      border: 2px solid #e5d9f5;
+      border-radius: 15px;
+      font-size: 17px;
+      outline: none;
+    }
+
+    input:focus {
+      border-color: #9b72cf;
+    }
+
+    .login-button {
+      width: 100%;
+      margin-top: 25px;
+      padding: 16px;
+      border: none;
+      border-radius: 18px;
+      background: linear-gradient(135deg, #9b72cf, #6f9de8);
+      color: white;
+      font-size: 19px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .login-button:active {
+      transform: scale(0.98);
+    }
+
+    .create {
+      display: inline-block;
+      margin-top: 20px;
+      color: #7652a8;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .back {
+      display: block;
+      margin-top: 18px;
+      color: #777;
+      text-decoration: none;
+    }
+
+    .message {
+      margin-top: 18px;
+      font-weight: bold;
+      color: #d05a5a;
+      min-height: 24px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="login-card">
+
+    <div class="fox">🦊</div>
+
+    <h1>Добро пожаловать!</h1>
+
+    <div class="subtitle">
+      Войди в своё приключение в «Умняше» 🌟
+    </div>
+
+    <form id="loginForm">
+
+      <label for="childName">Имя ребёнка</label>
+      <input
+        type="text"
+        id="childName"
+        placeholder="Например, Маша"
+        required
+      >
+
+      <label for="childCode">Код приключения</label>
+      <input
+        type="password"
+        id="childCode"
+        placeholder="4 цифры"
+        maxlength="4"
+        inputmode="numeric"
+        required
+      >
+
+      <button class="login-button" type="submit">
+        🚀 Войти в приключение
+      </button>
+
+    </form>
+
+    <div id="message" class="message"></div>
+
+    <a href="#" class="create">
+      ✨ У меня ещё нет профиля
+    </a>
+
+    <a
+      href="index.html"
+      class="back">
+      ← Вернуться на главную
+    </a>
+
+  </div>
+
+  <script>
+    document.getElementById("loginForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      const name = document.getElementById("childName").value.trim();
+      const code = document.getElementById("childCode").value.trim();
+      const message = document.getElementById("message");
+
+      if (name === "") {
+        message.textContent = "Напиши своё имя 😊";
+        return;
+      }
+
+      if (!/^\d{4}$/.test(code)) {
+        message.textContent = "Код должен состоять из 4 цифр 🔑";
+        return;
+      }
+
+      localStorage.setItem("childName", name);
+
+      message.style.color = "#5b9b68";
+      message.textContent = "Добро пожаловать, " + name + "! 🌟";
+
+      setTimeout(function() {
+        window.location.href = "child.html";
+      }, 700);
+    });
+  </script>
+
+</body>
+</html>
