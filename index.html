@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#7048e8">
+<meta name="description" content="Умняша — развивающие задания для детей 4–8 лет и подготовка к школе.">
+<title>Умняша — учимся играя</title>
+<style>
+:root{--ink:#182657;--muted:#66709a;--purple:#7048e8;--blue:#45a7f5;--mint:#6bd7a8;--yellow:#ffd85c;--pink:#ff8eb2;--bg:#f7f8ff;--card:#fff;--line:#e7e9f6;--shadow:0 18px 50px rgba(39,42,96,.10)}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:linear-gradient(#f8f9ff,#f1f5ff);color:var(--ink)}button{font:inherit;border:0;cursor:pointer}button:focus-visible{outline:3px solid #9b84ff;outline-offset:2px}.app{min-height:100vh}.top{height:76px;background:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 5vw;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}.brand{display:flex;gap:10px;align-items:center;font-weight:900;font-size:25px}.brand .star{font-size:34px}.nav{display:flex;gap:22px;color:var(--muted);font-weight:700}.nav button{background:none;color:inherit}.profile{display:flex;gap:10px;align-items:center}.avatar{width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,#ffe07a,#ff9d5c);display:grid;place-items:center;font-size:24px}.shell{width:min(1240px,92%);margin:28px auto}.hero{background:linear-gradient(110deg,#fff 0%,#fff 45%,#eef8ff 100%);border-radius:34px;box-shadow:var(--shadow);overflow:hidden;display:grid;grid-template-columns:1.05fr .95fr;min-height:400px}.hero-copy{padding:52px}.eyebrow{display:inline-flex;padding:8px 13px;border-radius:999px;background:#f0eaff;color:var(--purple);font-weight:900}.hero h1{font-size:48px;line-height:1.04;margin:18px 0 14px;letter-spacing:-1.5px}.hero p{font-size:19px;color:var(--muted);max-width:620px;line-height:1.55}.cta{display:flex;gap:12px;margin-top:24px;flex-wrap:wrap}.primary{background:linear-gradient(135deg,#7a4cff,#5b32d5);color:#fff;padding:15px 24px;border-radius:16px;font-weight:900;box-shadow:0 12px 28px #6e48e83d}.secondary{background:#fff;color:var(--ink);border:1px solid var(--line);padding:15px 22px;border-radius:16px;font-weight:900}.hero-art{background:url('assets/hero.png') center/cover no-repeat;min-height:400px}.section-title{display:flex;justify-content:space-between;align-items:end;margin:38px 0 16px}.section-title h2{margin:0;font-size:28px}.section-title span{color:var(--muted)}.age-row{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.age{background:var(--card);border:2px solid transparent;border-radius:22px;padding:20px;text-align:left;box-shadow:var(--shadow);transition:.2s}.age:hover,.age.active{transform:translateY(-3px);border-color:#8d6bf0}.age .emoji{font-size:42px}.age h3{margin:8px 0 5px}.age p{margin:0;color:var(--muted);font-size:14px}.dashboard{display:grid;grid-template-columns:1.45fr .8fr;gap:18px;margin-top:24px}.card{background:#fff;border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow)}.map{padding:24px;position:relative;overflow:hidden}.map:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 15% 20%,#fff4c7 0 4%,transparent 5%),radial-gradient(circle at 85% 70%,#dff9eb 0 5%,transparent 6%);opacity:.7}.map>*{position:relative}.map-head{display:flex;justify-content:space-between;align-items:center;gap:15px}.pill{padding:8px 12px;background:#f4f2ff;color:var(--purple);border-radius:999px;font-weight:900}.islands{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:20px}.island{min-height:150px;border-radius:22px;padding:18px;color:#fff;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}.island:nth-child(1){background:linear-gradient(145deg,#7a57ee,#9a7df2)}.island:nth-child(2){background:linear-gradient(145deg,#35a9ef,#65c8f7)}.island:nth-child(3){background:linear-gradient(145deg,#44c48b,#76dbac)}.island:nth-child(4){background:linear-gradient(145deg,#ff9b63,#ffc66c)}.island.locked{filter:grayscale(.25);opacity:.62}.island .big{font-size:38px}.island small{opacity:.9}.island button{align-self:flex-start;padding:8px 12px;border-radius:10px;background:#ffffff33;color:#fff;font-weight:900}.side{padding:22px}.side h3{margin-top:0}.metric{display:flex;justify-content:space-between;margin:13px 0}.bar{height:10px;background:#eef0f8;border-radius:99px;overflow:hidden}.bar i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,#7048e8,#a98af8)}.daily{margin-top:20px}.task{display:flex;align-items:center;gap:12px;padding:13px 0;border-bottom:1px solid var(--line)}.task:last-child{border-bottom:0}.check{width:30px;height:30px;border-radius:10px;background:#f1edff;color:var(--purple);display:grid;place-items:center;font-weight:900;flex:0 0 auto}.task.done .check{background:#dff8eb;color:#17915b}.task b{display:block}.task small{color:var(--muted);display:block;margin-top:3px}.achievement-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.badge{padding:20px;text-align:center}.badge .icon{font-size:38px}.badge h4{margin:8px 0 4px}.badge p{margin:0;color:var(--muted);font-size:13px}.parent{display:grid;grid-template-columns:1fr 1fr;gap:18px}.report{padding:24px}.recommend{background:linear-gradient(135deg,#f2edff,#f8f5ff);padding:20px;border-radius:20px}.recommend strong{color:var(--purple)}.trial{margin-top:24px;padding:28px;background:linear-gradient(135deg,#fff7d6,#f5efff);border:1px solid var(--line);border-radius:28px;box-shadow:var(--shadow)}.trial-head{display:flex;justify-content:space-between;align-items:center;gap:16px}.trial-head h2{margin:0 0 6px}.trial-head p{margin:0;color:var(--muted)}.trial-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:18px}.trial-card{background:#fff;border:2px solid transparent;border-radius:18px;padding:16px;min-height:145px;box-shadow:0 8px 24px rgba(39,42,96,.07)}.trial-card .num{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:#f0eaff;color:var(--purple);font-weight:900}.trial-card h4{margin:12px 0 5px}.trial-card p{margin:0;color:var(--muted);font-size:13px;line-height:1.4}.trial-card.done{border-color:#39b878;background:#f3fff8}.trial-card.done .num{background:#dff8eb;color:#17915b}.trial-actions{display:flex;gap:10px;align-items:center;margin-top:18px;flex-wrap:wrap}.trial-progress{color:var(--muted);font-weight:800}@media(max-width:900px){.trial-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:560px){.trial-head{align-items:flex-start;flex-direction:column}.trial-grid{grid-template-columns:1fr}.trial{padding:20px}}
+.trial{position:relative;overflow:hidden;background:linear-gradient(135deg,#fff9dd 0%,#f7f0ff 52%,#eaf8ff 100%);border:0;padding:30px}
+.trial:before,.trial:after{content:"";position:absolute;border-radius:50%;pointer-events:none}.trial:before{width:170px;height:170px;background:#ffd85c55;right:-50px;top:-60px}.trial:after{width:130px;height:130px;background:#8ddcff55;left:-45px;bottom:-55px}
+.trial>*{position:relative;z-index:1}.trial-head h2{font-size:30px}.trial-head .primary{padding:13px 20px}
+.trial-card{position:relative;min-height:158px;padding:18px;transition:transform .2s,box-shadow .2s,border-color .2s}.trial-card:hover{transform:translateY(-5px);box-shadow:0 16px 30px rgba(39,42,96,.12)}
+.trial-card:nth-child(1){background:linear-gradient(145deg,#fff,#eef9ff)}.trial-card:nth-child(2){background:linear-gradient(145deg,#fff,#f2edff)}.trial-card:nth-child(3){background:linear-gradient(145deg,#fff,#fff5d8)}.trial-card:nth-child(4){background:linear-gradient(145deg,#fff,#eafaf3)}.trial-card:nth-child(5){background:linear-gradient(145deg,#fff,#fff0f5)}
+.trial-card .num{box-shadow:0 5px 14px rgba(112,72,232,.14)}
+.trial-progress-wrap{display:flex;align-items:center;gap:12px;margin-top:20px}.mini-progress{height:10px;flex:1;background:#ffffffaa;border-radius:99px;overflow:hidden}.mini-progress i{display:block;height:100%;background:linear-gradient(90deg,#7048e8,#ff8eb2);border-radius:99px;transition:width .3s}
+.pricing{margin-top:30px;padding:30px;background:linear-gradient(135deg,#f3efff,#fff);border-radius:28px;border:1px solid var(--line);box-shadow:var(--shadow)}.pricing-head{text-align:center;max-width:720px;margin:0 auto 22px}.pricing-head h2{font-size:30px;margin:0 0 8px}.pricing-head p{margin:0;color:var(--muted)}.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.plan{background:#fff;border:2px solid var(--line);border-radius:24px;padding:24px;position:relative;box-shadow:0 10px 28px rgba(39,42,96,.07)}.plan.featured{border-color:#8d6bf0;transform:translateY(-5px)}.plan .tag{position:absolute;right:14px;top:14px;background:#7048e8;color:#fff;padding:6px 10px;border-radius:999px;font-size:12px;font-weight:900}.plan h3{margin:0 0 8px;font-size:22px}.price{font-size:34px;font-weight:950;margin:10px 0}.price small{font-size:14px;color:var(--muted);font-weight:700}.plan ul{padding:0 0 0 20px;color:var(--muted);line-height:1.7;min-height:105px}.sbp{width:100%;background:linear-gradient(135deg,#19a974,#0d8e60);color:#fff;padding:14px 18px;border-radius:15px;font-weight:950;box-shadow:0 10px 22px #0d8e6030}.pay-note{text-align:center;color:var(--muted);font-size:12px;margin-top:12px}.payment-status{margin-top:14px;padding:13px 15px;border-radius:14px;background:#f3f5fb;color:var(--muted);display:none}.payment-status.show{display:block}.success{background:#e8faf0;color:#147b50}.error{background:#fff0f3;color:#ad365a}
+@media(max-width:900px){.plans{grid-template-columns:1fr}.plan.featured{transform:none}}
+.footer{padding:45px 5vw;color:var(--muted);text-align:center}.modal{position:fixed;inset:0;background:#18265777;display:none;place-items:center;z-index:50;padding:20px}.modal.show{display:grid}.modal-box{width:min(650px,100%);background:#fff;border-radius:28px;padding:28px;box-shadow:0 30px 100px #0003;max-height:90vh;overflow:auto}.close{float:right;width:38px;height:38px;border-radius:50%;background:#f1f2f8;font-size:22px}.question{font-size:26px;font-weight:900;margin:22px 0}.answers{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.answer{padding:18px;border:2px solid var(--line);border-radius:16px;background:#fff;font-weight:800;text-align:left}.answer:hover{border-color:#8d6bf0;background:#faf8ff}.answer.correct{border-color:#39b878;background:#e9fbf1}.answer.wrong{border-color:#ff7b9c;background:#fff0f3}.feedback{margin-top:16px;padding:14px;border-radius:15px}.feedback.ok{background:#e6faef;color:#167b50}.feedback.no{background:#fff0f3;color:#ad365a}.progressline{height:12px;background:#eef0f8;border-radius:99px;overflow:hidden;margin:15px 0}.progressline i{display:block;height:100%;background:linear-gradient(90deg,#ffb64c,#ff7c8d);width:0}.toast{position:fixed;right:20px;bottom:20px;background:#182657;color:#fff;padding:14px 18px;border-radius:15px;display:none;z-index:60}.toast.show{display:block}.muted{color:var(--muted)}@media(max-width:900px){.hero{grid-template-columns:1fr}.hero-art{min-height:280px}.age-row,.islands,.achievement-grid{grid-template-columns:repeat(2,1fr)}.dashboard,.parent{grid-template-columns:1fr}.nav{display:none}}@media(max-width:560px){.hero-copy{padding:30px}.hero h1{font-size:36px}.age-row,.islands,.achievement-grid{grid-template-columns:1fr}.top{padding:0 4vw}.profile span{display:none}.shell{width:94%}.map-head{align-items:flex-start;flex-direction:column}.answers{grid-template-columns:1fr}.task{align-items:flex-start}.task .secondary{margin-left:auto!important;white-space:nowrap}}
+</style>
+</head>
+<body>
+<div class="app">
+<header class="top">
+  <div class="brand"><span class="star">🌟</span> Умняша</div>
+  <nav class="nav" aria-label="Навигация">
+    <button type="button" data-scroll="learning">Занятия</button>
+    <button type="button" data-scroll="map">Карта</button>
+    <button type="button" data-scroll="parents">Родителям</button><button type="button" data-scroll="payment">Подписка</button>
+  </nav>
+  <div class="profile"><div class="avatar">🦊</div><span><b>Маша</b><br><small id="profileAge">6 лет · уровень 7</small></span></div>
+</header>
+<main class="shell">
+<section class="hero">
+  <div class="hero-copy">
+    <span class="eyebrow">✨ Версия 3.5 · игровой учебный мир</span>
+    <h1>Готовимся к школе<br>с удовольствием!</h1>
+    <p>Каждый день — маленькое приключение: математика, чтение, логика, внимание и подготовка руки к письму.</p>
+    <div class="cta"><button class="primary" type="button" id="trialBtn">🎁 Попробовать 5 заданий</button><button class="secondary" type="button" id="continueBtn">🚀 Продолжить приключение</button><button class="secondary" type="button" id="diagnosticBtn">🎯 Проверить навыки</button></div>
+    <p style="font-size:14px;margin-top:12px">Сегодня: <b>10–18 минут</b> · серия <b id="streakText">0 дней 🔥</b></p>
+  </div><div class="hero-art" role="img" aria-label="Иллюстрация Умняши"></div>
+</section>
+<section class="trial" id="trial">
+  <div class="trial-head"><div><h2>🎁 Пробное занятие — 5 заданий</h2><p>Попробуйте «Умняшу» бесплатно: математика, логика, чтение, внимание и письмо.</p></div><span class="pill">Бесплатно</span></div>
+  <div class="trial-grid" id="trialGrid"></div>
+  <div class="trial-progress-wrap"><div class="mini-progress"><i id="trialProgressBar" style="width:0%"></i></div><span id="trialProgress">0 из 5 выполнено</span></div><div class="trial-actions"><button class="primary" type="button" id="trialStartBtn">Начать пробное занятие</button></div>
+</section>
+<section id="learning"><div class="section-title"><div><h2>Выберите возраст</h2><span>Задания под уровень ребёнка</span></div></div><div class="age-row" id="ages"></div></section>
+<section id="map"><div class="section-title"><div><h2>🗺️ Карта приключений</h2><span>Пройди острова и собери коллекцию знаний</span></div><span class="pill">⭐ <span id="stars">0</span> звёзд</span></div><div class="card map"><div class="map-head"><div><b id="mapTitle">Остров «Большое путешествие»</b><div id="mapSubtitle" class="muted" style="margin-top:4px">3 из 4 островов открыто</div></div><button class="secondary" type="button" id="resetBtn">Сбросить прогресс</button></div><div class="islands" id="islands"></div></div></section>
+<section><div class="section-title"><div><h2>🏆 Мои достижения</h2><span>Новые значки появляются за регулярные занятия</span></div></div><div class="achievement-grid" id="achievements"></div></section>
+<section class="dashboard"><div class="card side"><h3>📅 План на сегодня</h3><div id="daily"></div></div><div class="card side"><h3>📈 Мои навыки</h3><div id="skills"></div></div></section>
+<section id="parents"><div class="section-title"><div><h2>👨‍👩‍👧 Для родителей</h2><span>Короткий отчёт без сложных терминов</span></div></div><div class="parent"><div class="card report"><h3>Профиль Маши</h3><p class="muted" id="parentAge">6 лет · занимается с Умняшей</p><div class="metric"><b>Готовность к школе</b><b id="schoolScore">0%</b></div><div class="bar"><i id="schoolBar" style="width:0%"></i></div><div class="recommend"><strong>💡 Что потренировать</strong><p id="recommend">Здесь появится персональная рекомендация.</p></div></div><div class="card report"><h3>Сегодня</h3><div class="metric"><span>Заданий выполнено</span><b id="doneCount">0</b></div><div class="metric"><span>Правильных ответов</span><b id="correctCount">0</b></div><div class="metric"><span>Звёзд</span><b id="parentStars">0</b></div><div class="metric"><span>Серия</span><b id="parentStreak">0 дней 🔥</b></div><button class="primary" style="width:100%;margin-top:12px" type="button" id="parentStartBtn">Открыть занятия ребёнка</button></div></div></section>
+</main>
+<section class="pricing" id="payment">
+  <div class="pricing-head"><h2>🌟 Продолжить обучение</h2><p>После пробного занятия можно открыть полный доступ к заданиям. Для оплаты на сайте подготовлен вариант через СБП.</p></div>
+  <div class="plans">
+    <article class="plan"><h3>Пробный</h3><div class="price">0 ₽</div><ul><li>5 заданий</li><li>Знакомство с «Умняшей»</li><li>Результат занятия</li></ul><button class="secondary" type="button" id="planTrialBtn">🎁 Уже доступно</button></article>
+    <article class="plan featured"><span class="tag">ПОПУЛЯРНЫЙ</span><h3>Месяц</h3><div class="price">490 ₽ <small>/ месяц</small></div><ul><li>Все задания 4–8 лет</li><li>Новые занятия и игры</li><li>Прогресс и достижения</li></ul><button class="sbp" type="button" data-pay="490.00" data-plan="Месяц «Умняши»">💚 Оплатить по СБП</button></article>
+    <article class="plan"><h3>Год</h3><div class="price">3 490 ₽ <small>/ год</small></div><ul><li>Полный доступ на 12 месяцев</li><li>Все разделы и уровни</li><li>Выгоднее помесячной оплаты</li></ul><button class="sbp" type="button" data-pay="3490.00" data-plan="Год «Умняши»">💚 Оплатить по СБП</button></article>
+  </div>
+  <div id="paymentStatus" class="payment-status"></div>
+  <div class="pay-note">Оплата проходит на защищённой странице платёжного сервиса. СБП работает через банковское приложение.</div>
+</section>
+<footer class="footer">Умняша · учимся играя · версия 3.5</footer>
+</div>
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal-box"><button class="close" type="button" id="closeModal" aria-label="Закрыть">×</button><div id="modalContent"></div></div></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>
+(() => {
+  'use strict';
+  const STORAGE_KEY = 'umnyasha35';
+  const ages = [
+    ['4–5 лет','🐯','Познакомимся с миром','Начальный','4-5'],
+    ['5–6 лет','🐊','Готовимся к школе','Базовый','5-6'],
+    ['6–7 лет','🦝','Учимся и исследуем','Продвинутый','6-7'],
+    ['7–8 лет','🦉','Уверенный старт','Школьный','7-8']
+  ];
+  const programs = {
+    '4-5':{title:'Первые шаги',minutes:10},'5-6':{title:'Готовимся уверенно',minutes:12},'6-7':{title:'Маршрут к школе',minutes:15},'7-8':{title:'Старт школьника',minutes:18}
+  };
+  const islands = [
+    ['🔤','Остров букв','Чтение и звуки','reading',true],['🔢','Математический порт','Счёт и задачи','math',true],['🧠','Логический лес','Закономерности','logic',true],['✍️','Мастерская письма','Графика и письмо','writing',false]
+  ];
+  const tasks = [
+    {id:1,cat:'Математика',skill:'math',q:'Сколько яблок? 🍎🍎🍎🍎🍎',a:['4','5','6','7'],correct:1},
+    {id:2,cat:'Логика',skill:'logic',q:'Что лишнее?',a:['🐶 Собака','🐱 Кошка','🐰 Заяц','🍎 Яблоко'],correct:3},
+    {id:3,cat:'Чтение',skill:'reading',q:'Какой звук в начале слова «МАМА»?',a:['М','С','Т','К'],correct:0},
+    {id:4,cat:'Внимание',skill:'attention',q:'Продолжи ряд: 🔵 🟡 🔵 🟡 🔵 …',a:['🔵','🟡','🟢','🔴'],correct:1},
+    {id:5,cat:'Письмо',skill:'writing',q:'Какая линия похожа на дорожку для карандаша?',a:['〰️','○','□','△'],correct:0},
+    {id:6,cat:'Речь',skill:'speech',q:'Какое слово подходит к «сладкий»?',a:['🍋 Кислый','🍯 Мёд','🧊 Лёд','🌧️ Дождь'],correct:1},
+    {id:7,cat:'Математика',skill:'math',q:'У Маши было 3 карандаша. Дали ещё 2. Сколько стало?',a:['4','5','6','7'],correct:1},
+    {id:8,cat:'Логика',skill:'logic',q:'Продолжи: ▲ ▲ ● ▲ ▲ ● ▲ …',a:['▲','●','■','★'],correct:1},
+    {id:9,cat:'Чтение',skill:'reading',q:'Составь слово из слогов: МА + ША',a:['МАША','ШАМА','МАСА','МШАА'],correct:0},
+    {id:10,cat:'Внимание',skill:'attention',q:'Найди пару: 🐟 🐸 🐟 🐱',a:['🐱','🐟','🐸','🦊'],correct:1},
+    {id:11,cat:'Математика',skill:'math',q:'Какое число больше?',a:['7','5','3','1'],correct:0},
+    {id:12,cat:'Речь',skill:'speech',q:'Что можно услышать?',a:['🌈 Радуга','🎵 Музыка','🍎 Яблоко','🧸 Игрушка'],correct:1}
+  ];
+  const TRIAL_IDS = [1,2,3,4,5];
+  const defaultState = () => ({age:2,stars:0,correct:0,completed:[],trialCompleted:[],dailyDate:'',dailyIds:[],streak:0,skills:{math:0,reading:0,logic:0,attention:0,writing:0,speech:0}});
+  let state;
+  try { state = Object.assign(defaultState(), JSON.parse(localStorage.getItem(STORAGE_KEY) || 'null') || {}); } catch { state = defaultState(); }
+  state.skills = Object.assign(defaultState().skills, state.skills || {});
+  state.completed = Array.isArray(state.completed) ? state.completed : [];
+  state.trialCompleted = Array.isArray(state.trialCompleted) ? state.trialCompleted : [];
+  state.age = Number.isInteger(state.age) && state.age >= 0 && state.age < ages.length ? state.age : 2;
+  let currentTask = null;
+  let currentMode = 'normal';
+  let trialIndex = 0;
+  let toastTimer = null;
+
+  const $ = id => document.getElementById(id);
+  const today = () => { const d = new Date(); return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`; };
+  function save(){ try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); } catch {} }
+  function program(){ return programs[ages[state.age][4]]; }
+  function ensureDaily(){
+    const day = today();
+    if(state.dailyDate !== day || !Array.isArray(state.dailyIds) || state.dailyIds.length !== 4){
+      const pool = tasks.filter(t => t.skill !== 'writing' || state.age >= 1);
+      state.dailyIds = pool.slice((state.age * 2) % Math.max(1,pool.length-3), (state.age * 2) % Math.max(1,pool.length-3) + 4).map(t=>t.id);
+      if(state.dailyIds.length < 4) state.dailyIds = tasks.slice(0,4).map(t=>t.id);
+      state.dailyDate = day;
+      save();
+    }
+  }
+  function completedToday(){ ensureDaily(); return state.dailyIds.filter(id=>state.completed.includes(id)).length; }
+  function render(){
+    ensureDaily();
+    const age = ages[state.age];
+    $('ages').innerHTML = ages.map((a,i)=>`<button type="button" class="age ${i===state.age?'active':''}" data-age="${i}"><div class="emoji">${a[1]}</div><h3>${a[0]}</h3><p>${a[2]} · ${a[3]}</p></button>`).join('');
+    $('stars').textContent=state.stars; $('doneCount').textContent=completedToday(); $('correctCount').textContent=state.correct; $('parentStars').textContent=state.stars; $('parentStreak').textContent=`${state.streak} дней 🔥`; $('streakText').textContent=`${state.streak} дней 🔥`;
+    $('profileAge').textContent=`${age[0].replace(' лет','')} · ${age[3]}`; $('parentAge').textContent=`${age[0]} · ${program().title}`;
+    $('islands').innerHTML=islands.map((x,i)=>`<div class="island ${x[4]?'':'locked'}"><div class="big">${x[0]}</div><div><b>${x[1]}</b><br><small>${x[2]}</small></div><button type="button" data-island="${i}">${x[4]?'Играть':'🔒 Скоро'}</button></div>`).join('');
+    $('trialGrid').innerHTML=TRIAL_IDS.map((id,i)=>{const t=tasks.find(x=>x.id===id);const done=state.trialCompleted.includes(id);return `<div class="trial-card ${done?'done':''}"><div class="num">${done?'✓':i+1}</div><h4>${t.cat}</h4><p>${t.q}</p></div>`;}).join('');
+    $('trialProgress').textContent=`${state.trialCompleted.length} из 5 выполнено`; $('trialProgressBar').style.width=`${Math.round(state.trialCompleted.length/5*100)}%`;
+    $('daily').innerHTML=state.dailyIds.map((id,i)=>{const t=tasks.find(x=>x.id===id);const done=state.completed.includes(id);return `<div class="task ${done?'done':''}"><div class="check">${done?'✓':'→'}</div><div><b>${t.cat}</b><small>${t.q}</small></div><button class="secondary" type="button" data-task="${t.id}" style="margin-left:auto;padding:8px 12px">${done?'Повторить':'Начать'}</button></div>`;}).join('');
+    const cats=[['math','Математика'],['reading','Чтение'],['logic','Логика'],['attention','Внимание'],['writing','Письмо'],['speech','Речь']];
+    $('skills').innerHTML=cats.map(([key,label])=>{const value=Math.min(100,state.skills[key]*10);return `<div class="metric"><span>${label}</span><b>${value}%</b></div><div class="bar"><i style="width:${value}%"></i></div>`;}).join('');
+    const score=Math.round(cats.reduce((sum,[k])=>sum+state.skills[k],0)/(cats.length*10)*100);
+    $('schoolScore').textContent=`${score}%`; $('schoolBar').style.width=`${score}%`;
+    const weakest=cats.slice().sort((a,b)=>state.skills[a[0]]-state.skills[b[0]])[0];
+    $('recommend').textContent=`Полезно уделить немного больше времени на ${weakest[1].toLowerCase()}. Занимайтесь короткими подходами по ${Math.max(5,Math.round(program().minutes/2))} минут.`;
+    const achievements=[['🔥','Серия','Занятия несколько дней подряд',state.streak>=3],['⭐','50 звёзд','Первые большие достижения',state.stars>=50],['🧠','Логик','Развиваем закономерности',state.skills.logic>=5],['📚','Читатель','Развиваем чтение',state.skills.reading>=5]];
+    $('achievements').innerHTML=achievements.map(x=>`<div class="card badge"><div class="icon">${x[0]}</div><h4>${x[1]} ${x[3]?'✓':''}</h4><p>${x[2]}</p></div>`).join('');
+  }
+  function setAge(i){ state.age=i; state.dailyDate=''; ensureDaily(); save(); render(); toast(`Возраст выбран: ${ages[i][0]}`); }
+  function scrollToId(id){ const el=$(id); if(el) el.scrollIntoView({behavior:'smooth',block:'start'}); }
+  function startDaily(){ ensureDaily(); const next=state.dailyIds.find(id=>!state.completed.includes(id)) || state.dailyIds[0]; openTask(next); }
+  function startTrial(){ trialIndex=0; openTrialTask(); }
+  function openTrialTask(){ const id=TRIAL_IDS[trialIndex]; const t=tasks.find(x=>x.id===id); if(!t)return; currentTask=t; currentMode='trial'; $('modalContent').innerHTML=`<span class="eyebrow">🎁 Пробное занятие · ${ages[state.age][0]}</span><h2 id="modalTitle" class="question">Задание ${trialIndex+1} из 5</h2><p class="muted">${t.cat}</p><div class="question">${t.q}</div><div class="answers">${t.a.map((a,i)=>`<button type="button" class="answer" data-answer="${i}">${a}</button>`).join('')}</div><div id="feedback" class="feedback" hidden></div><div class="progressline"><i style="width:${Math.round(trialIndex/5*100)}%"></i></div><small class="muted">Бесплатно · осталось ${5-trialIndex} заданий</small>`; $('modal').classList.add('show'); }
+  function finishTrial(){ $('modalContent').innerHTML=`<span class="eyebrow">🎉 Пробное занятие завершено</span><h2 id="modalTitle" class="question">Отличный старт!</h2><p class="muted">Ты прошёл все 5 пробных заданий. Теперь можно продолжить занятия и открывать новые острова.</p><button type="button" class="primary" id="trialContinueBtn">🚀 Продолжить обучение</button>`; $('trialContinueBtn').addEventListener('click',startDaily,{once:true}); render(); }
+  function openCategory(index){ const island=islands[index]; if(!island[4]) return toast('Эта мастерская откроется в следующем обновлении 🔒'); const t=tasks.find(x=>x.skill===island[3]) || tasks[0]; openTask(t.id); }
+  function openTask(id, mode='normal'){ const t=tasks.find(x=>x.id===id); if(!t) return toast('Задание временно недоступно'); currentTask=t; currentMode=mode; const done=completedToday(); $('modalContent').innerHTML=`<span class="eyebrow">${t.cat} · ${ages[state.age][0]}</span><h2 id="modalTitle" class="question">${t.q}</h2><div class="answers">${t.a.map((a,i)=>`<button type="button" class="answer" data-answer="${i}">${a}</button>`).join('')}</div><div id="feedback" class="feedback" hidden></div><div class="progressline"><i style="width:${Math.round(done/4*100)}%"></i></div><small class="muted">Сегодня выполнено ${done} из 4 заданий</small>`; $('modal').classList.add('show'); }
+  function answer(index){ if(!currentTask) return; const buttons=[...document.querySelectorAll('#modalContent [data-answer]')]; buttons.forEach(b=>b.disabled=true); const correct=index===currentTask.correct; const btn=buttons[index]; const feedback=$('feedback'); if(correct){btn.classList.add('correct'); if(currentMode==='trial'){ if(!state.trialCompleted.includes(currentTask.id)){state.trialCompleted.push(currentTask.id); state.correct++; state.stars+=2; state.skills[currentTask.skill]=Math.min(10,state.skills[currentTask.skill]+1); save(); } feedback.hidden=false; feedback.className='feedback ok'; feedback.textContent='🎉 Отлично! Переходим дальше.'; setTimeout(()=>{trialIndex++; if(trialIndex<TRIAL_IDS.length){openTrialTask();}else{finishTrial();}},500); return;} if(!state.completed.includes(currentTask.id)){state.completed.push(currentTask.id);state.correct++;state.stars+=3;state.skills[currentTask.skill]=Math.min(10,state.skills[currentTask.skill]+1);state.streak=Math.max(1,state.streak+1);save();render();toast('⭐ +3 звезды!')} feedback.hidden=false;feedback.className='feedback ok';feedback.textContent='🎉 Отлично! Правильный ответ.'; setTimeout(()=>closeModal(),650);}else{btn.classList.add('wrong');feedback.hidden=false;feedback.className='feedback no';feedback.textContent='Попробуй ещё раз 😊';buttons.forEach(b=>b.disabled=false);btn.disabled=true;} }
+  function openDiagnostic(){ let index=0,score=0; const show=()=>{const t=tasks[index];$('modalContent').innerHTML=`<span class="eyebrow">🎯 Диагностика</span><h2 id="modalTitle" class="question">Задание ${index+1} из 8</h2><p class="muted">${t.q}</p><div class="answers">${t.a.map((a,i)=>`<button type="button" class="answer" data-diag="${i}">${a}</button>`).join('')}</div><div class="progressline"><i style="width:${Math.round(index/8*100)}%"></i></div>`; $('modal').classList.add('show');}; const finish=()=>{state.stars+=score;save();render();$('modalContent').innerHTML=`<span class="eyebrow">✨ Готово!</span><h2 id="modalTitle" class="question">Результат: ${score} из 8</h2><p class="muted">Это не оценка. Диагностика помогает понять, с чего удобнее начать занятия.</p><button type="button" class="primary" id="diagContinue">Продолжить обучение</button>`; $('diagContinue').addEventListener('click',startDaily,{once:true});}; show(); $('modalContent').addEventListener('click',function handler(e){const b=e.target.closest('[data-diag]');if(!b)return;const choice=Number(b.dataset.diag);if(choice===tasks[index].correct)score++;index++;if(index<8)show();else{this.removeEventListener('click',handler);finish();}}); }
+  function closeModal(){ $('modal').classList.remove('show'); currentTask=null; }
+  function toast(message){ const x=$('toast');x.textContent=message;x.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>x.classList.remove('show'),1800); }
+  function resetProgress(){ if(!window.confirm('Сбросить весь прогресс «Умняши» на этом устройстве?')) return; localStorage.removeItem(STORAGE_KEY); state=defaultState(); ensureDaily(); render(); toast('Прогресс сброшен'); }
+  $('ages').addEventListener('click',e=>{const b=e.target.closest('[data-age]');if(b)setAge(Number(b.dataset.age));});
+  $('islands').addEventListener('click',e=>{const b=e.target.closest('[data-island]');if(b)openCategory(Number(b.dataset.island));});
+  $('daily').addEventListener('click',e=>{const b=e.target.closest('[data-task]');if(b)openTask(Number(b.dataset.task));});
+  $('modalContent').addEventListener('click',e=>{const b=e.target.closest('[data-answer]');if(b)answer(Number(b.dataset.answer));});
+  document.querySelectorAll('[data-scroll]').forEach(b=>b.addEventListener('click',()=>scrollToId(b.dataset.scroll)));
+  $('trialBtn').addEventListener('click',startTrial); $('trialStartBtn').addEventListener('click',startTrial); $('continueBtn').addEventListener('click',startDaily); $('diagnosticBtn').addEventListener('click',openDiagnostic); $('parentStartBtn').addEventListener('click',startDaily); $('resetBtn').addEventListener('click',resetProgress); $('closeModal').addEventListener('click',closeModal);
+  $('modal').addEventListener('click',e=>{if(e.target===$('modal'))closeModal();});
+  async function startPayment(amount, plan){
+    const box=$('paymentStatus'); box.className='payment-status show'; box.textContent='⏳ Создаём платёж…';
+    try{
+      const res=await fetch('/.netlify/functions/create-payment',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({amount,plan,returnUrl:window.location.origin+'/?payment=return'})});
+      const data=await res.json();
+      if(!res.ok || !data.confirmation_url) throw new Error(data.error||'Не удалось создать платёж');
+      window.location.href=data.confirmation_url;
+    }catch(err){box.className='payment-status show error';box.textContent='⚠️ Платежи ещё не подключены к магазину. Сначала добавьте ключи ЮKassa в Netlify → Environment variables.';}
+  }
+  document.querySelectorAll('[data-pay]').forEach(b=>b.addEventListener('click',()=>startPayment(b.dataset.pay,b.dataset.plan)));
+  if(new URLSearchParams(location.search).get('payment')==='return'){const box=$('paymentStatus');box.className='payment-status show success';box.textContent='✅ Вы вернулись со страницы оплаты. Проверяем статус платежа…';}
+  document.addEventListener('keydown',e=>{if(e.key==='Escape' && $('modal').classList.contains('show'))closeModal();});
+  ensureDaily(); render();
+})();
+</script>
+</body>
+</html>
