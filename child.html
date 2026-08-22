@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Моё приключение — Умняша</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #fff4c7, #dff7ff, #f5ddff);
+      padding: 20px;
+      color: #4d4260;
+    }
+
+    .container {
+      max-width: 850px;
+      margin: auto;
+    }
+
+    .welcome {
+      background: white;
+      border-radius: 28px;
+      padding: 25px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+
+    .avatar {
+      font-size: 65px;
+    }
+
+    h1 {
+      color: #694b91;
+      margin: 8px 0;
+      font-size: 30px;
+    }
+
+    .stars {
+      display: inline-block;
+      background: #fff1a8;
+      padding: 10px 20px;
+      border-radius: 20px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 25px;
+      color: #694b91;
+      margin: 25px 0 15px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 15px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 24px;
+      padding: 22px;
+      text-align: center;
+      box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+    }
+
+    .emoji {
+      font-size: 45px;
+    }
+
+    .card h3 {
+      margin: 10px 0 7px;
+      color: #694b91;
+    }
+
+    .card p {
+      color: #777;
+      font-size: 14px;
+    }
+
+    .start {
+      border: none;
+      border-radius: 15px;
+      padding: 12px 20px;
+      background: linear-gradient(135deg, #9b72cf, #6f9de8);
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .logout {
+      display: block;
+      margin: 25px auto 10px;
+      border: none;
+      background: transparent;
+      color: #777;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    .progress {
+      margin-top: 15px;
+      height: 14px;
+      background: #eee;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .progress-bar {
+      width: 25%;
+      height: 100%;
+      background: linear-gradient(90deg, #9b72cf, #6f9de8);
+      border-radius: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="welcome">
+
+      <div class="avatar">🦊</div>
+
+      <h1>
+        Привет, <span id="childName">юный исследователь</span>! 🌟
+      </h1>
+
+      <p>Твоё большое приключение начинается!</p>
+
+      <div class="stars">
+        ⭐ Звёзды: 0
+      </div>
+
+    </div>
+
+    <h2 class="section-title">🗺️ Твои приключения</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <div class="emoji">🔢</div>
+        <h3>Математика</h3>
+        <p>Учимся считать и решать задачки</p>
+        <button class="start">Начать</button>
+      </div>
+
+      <div class="card">
+        <div class="emoji">🔤</div>
+        <h3>Буквы</h3>
+        <p>Играем со словами и буквами</p>
+        <button class="start">Начать</button>
+      </div>
+
+      <div class="card">
+        <div class="emoji">🧩</div>
+        <h3>Логика</h3>
+        <p>Развиваем мышление</p>
+        <button class="start">Начать</button>
+      </div>
+
+      <div class="card">
+        <div class="emoji">🎨</div>
+        <h3>Творчество</h3>
+        <p>Рисуем и создаём новое</p>
+        <button class="start">Начать</button>
+      </div>
+
+    </div>
+
+    <h2 class="section-title">🏆 Мой прогресс</h2>
+
+    <div class="card">
+
+      <p><strong>Путь исследователя</strong></p>
+
+      <div class="progress">
+        <div class="progress-bar"></div>
+      </div>
+
+      <p>25% приключения пройдено</p>
+
+    </div>
+
+    <button class="logout" onclick="logout()">
+      Выйти из профиля
+    </button>
+
+  </div>
+
+  <script>
+    const name = localStorage.getItem("childName");
+
+    if (name) {
+      document.getElementById("childName").textContent = name;
+    }
+
+    function logout() {
+      localStorage.removeItem("childName");
+      window.location.href = "login.html";
+    }
+  </script>
+
+</body>
+</html>
